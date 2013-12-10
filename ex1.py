@@ -31,3 +31,11 @@ print(y.reverse())
 
 print("Hello world!")
 
+numbers = [1,2,3,4,5,6,7]
+
+print(numbers)
+
+x = [1,2,3]
+print(x.pop())
+x.reverse()
+print(x)
