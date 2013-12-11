@@ -31,6 +31,13 @@ print(y.reverse())
 
 print("Hello world!")
 
+number = input('Enter a number between 1 and 10:')
+if number <= 10 and number >=1:
+   print 'Great'
+else:
+   print 'Wrong!'
+
+
 numbers = [1,2,3,4,5,6,7]
 
 print(numbers)
@@ -39,3 +46,19 @@ x = [1,2,3]
 print(x.pop())
 x.reverse()
 print(x)
+
+age = 10
+assert 0 < age <100
+age = -1
+#assert 0 < age <100
+
+x = 1
+while x <= 100:
+   print x
+   x +=1
+#--------------------
+name = ''
+while not name or name.isspace():
+    name = raw_input('Please enter your name:')
+print('Hello.%s!' % name)
+
