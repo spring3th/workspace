@@ -119,6 +119,8 @@ distances ={10.6,11,8,10.6,"two",7}#相同数据直接忽略
 distances = set(james)#相同数据直接忽略
 
 print(sorted(set([sanitize(each_t) for each_t in james]))[0:3])
+"""以上代码从里往外读，先each_t是否包含在james，然后调用函数进行转换成统一的格式输出。
+然后返回列表建立集合，根据集合的特性去掉重复的数据项，最后排序列表，分片取前三，输出到屏幕"""
 
                         
                 
