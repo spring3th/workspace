@@ -21,10 +21,10 @@ print_lol(movies,True,2)
 
 #==========================
 import os
-print(os.getcwd())#fan hui dangqian mulu
-#qie huan dao zhiding mulu 
+print(os.getcwd())#返回当前目录
+#切换到指定目录
 #os.chdir('../home/software')
-#exception traceback error
+#对异常进行处理
 try:
 	data = open('text.txt')
 	for each_line in data:
