@@ -112,6 +112,13 @@ for each_t in james_sort:
         unique_james.append(each_t)
 print(unique_james[0:3])#分片取列表0～2不包括3在内。如果从后向前，则包括
 
+"""Python中集合（set()）最突出的特性是集合中的数据项是无序的，而且不允许重复。如果试图
+向一个集合增加一个数据项，而且该集合中已经包含友这个数据项，python就会直接将其忽略。"""
+distances = set()
+distances ={10.6,11,8,10.6,"two",7}#相同数据直接忽略
+distances = set(james)#相同数据直接忽略
+
+print(sorted(set([sanitize(each_t) for each_t in james]))[0:3])
 
                         
                 
