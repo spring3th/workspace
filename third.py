@@ -24,16 +24,20 @@ import os
 print(os.getcwd())#fan hui dangqian mulu
 #qie huan dao zhiding mulu 
 #os.chdir('../home/software')
+#exception traceback error
+try:
+	data = open('text.txt')
+	for each_line in data:
+		try:	
+			(role,line_spoken) = each_line.split(':',1)
+			print(role,end='')
+			print('said:',end='')
+			print(line_spoken,end='')
+		except ValueError:
+			pass
 
-data = open('test.txt')
-
-data.seek(0)#wenjian qishi
-for each_line in data:
-	(role,line_spoken) = each_line.split(':',1)
-	print(role,end='')
-	print('said:',end='')
-	print(line_spoken,en='')
-data.close()
-#print(data.readline(),end='')
+	data.close()
+except IOError:
+	print(data.readline(),end='')
 
 

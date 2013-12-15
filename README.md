@@ -1,4 +1,4 @@
 workspace
 =========
 
-python 初学者练习
+python：最好是只有一种方法来做一件事~
