@@ -104,5 +104,14 @@ lower = ["I","don't","like","spam"]
 upper = [s.upper() for s in lower]
 print(upper)
 """列表推导简洁，优雅，代码少"""
+print('===================================')
+james_sort = sorted([sanitize(each_t) for each_t in james])
+unique_james = []
+for each_t in james_sort:
+    if each_t not in unique_james:
+        unique_james.append(each_t)
+print(unique_james[0:3])#分片取列表0～2不包括3在内。如果从后向前，则包括
+
+
                         
                 
