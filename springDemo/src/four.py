@@ -84,6 +84,25 @@ clean_james = []
 #迭代处理每个以逗号分割的时间，按格式化成点号分割。
 for each_t in james:
     clean_james.append(sanitize(each_t))
-print(sorted(clean_james))
+print(sorted(clean_james,reverse=True))#从大到小排序，默认是从小到大排序
+
+#列表推导
+clean_mikey = [sanitize(each_t) for each_t in james]
+print('-------------------------------------------')
+print(sorted(clean_mikey))
+print(sorted(clean_mikey,reverse=True))
+
+mins = [1,2,3]
+secs = [m*60 for m in mins]
+print(secs)
+
+meters = [1,10,3]
+feet = [m*3.281 for m in meters]
+print(feet)
+
+lower = ["I","don't","like","spam"]
+upper = [s.upper() for s in lower]
+print(upper)
+"""列表推导简洁，优雅，代码少"""
                         
                 
